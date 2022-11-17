@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div
+          class="header_inner d-flex justify-content-between align-items-center"
+        >
+          <div>
+            <a href="#" class="logo_text text-decoration-none">
+              News <span class="logo_text_color">API</span>
+            </a>
+          </div>
+          <div>
+            <ul class="nav list-unstyled d-flex">
+              <li class="nav_item">
+                <a href="#" class="nav_link world_link text-decoration-none"
+                  >WORLD</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link society_link text-decoration-none"
+                  >SOCIETY</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link bussiness_link text-decoration-none"
+                  >BUSSINESS</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link tech_link text-decoration-none"
+                  >TECH</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link culture_link text-decoration-none"
+                  >CULTURE</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link sport_link text-decoration-none"
+                  >SPORT</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link tourism_link text-decoration-none"
+                  >TOURISM</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form class="news_form row">
+            <div class="col-6">
+              <input
+                type="search"
+                class="news_search_input form-control"
+                placeholder="Search news"
+              />
+            </div>
+            <div class="col-6">
+              <button class="news_btn btn btn-outline-light">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="containers">
+          <div class="hero_inner d-flex">
+            <div class="news_left_card">
+              <h3 class="list_title card_title">Search</h3>
+              <ul class="news_list g-3 list-unstyled mt-4"></ul>
+            </div>
+            <div class="news_right_card">
+              <h3 class="latest_list_title card_title">Latest News</h3>
+              <ul class="latest_news list-unstyled mt-4"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <template class="news_template">
+      <div>
+        <li class="news_item d-flex mb-3 shadow rounded-2 py-3 px-4">
+          <img class="news_img me-3 rounded-1" src="" alt="" />
+          <div class="d-flex flex-column">
+            <h5 class="news_title"></h5>
+            <time class="news_time"></time>
+            <a href="" class="news_link text-decoration-none" target="_blank"
+              >More...</a
+            >
+          </div>
+        </li>
+      </div>
+    </template>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
